@@ -30,6 +30,10 @@
     "TG_BOT_TOKEN": {
      "description": "Get this from @ARQRobot.",
      "required": true
+    },
+    "API_HASH": {
+      "description": "your telegram username, without @ okay",
+      "required": true
     }
   },
     "formation": {
