@@ -1,24 +1,41 @@
-    "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": ""
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": ""
-      },
-       "TG_BOT_TOKEN": {
-        "description": "Your bot token, as a string. Get it from @BotFather on telegram",
-        "value": ""
-      }
-    },
-    "buildpacks": [{
+{
+  "name": "nhenati bot",
+  "description": "Telegram Porn Hub Bot Written In Python Using ARQ API.",
+  "repository": "https://github.com/noobmasterhu/PornHub",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DJCTQ_-_18.svg/1024px-DJCTQ_-_18.svg.png",
+  "keywords": [
+    "python",
+    "telegram",
+    "bot",
+    "phub",
+    "phub bot",
+    "telegram-bot",
+    "pyrogram",
+    "ARQ",
+    "pornhub",
+    "API",
+    "Download"
+  ],
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
       "url": "heroku/python"
-    }],
+    }
+  ],
+  "env": {
+    "API_ID": {
+            "description": "Bot Token of your Telegram Bot from @BotFather",
+            "required": true
+},
+    "TG_BOT_TOKEN": {
+     "description": "Get this from @ARQRobot.",
+     "required": true
+    }
+  },
     "formation": {
       "worker": {
         "quantity": 1,
         "size": "free"
       }
-    }
-  
+  }
+}
